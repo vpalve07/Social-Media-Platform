@@ -309,6 +309,17 @@
                                     <a href="/profile/{{post.user}}"><strong>{{post.user}}:</strong></a> {{post.caption}}
                                 </p>
 
+                                <form action="/comments" method="POST">
+                                    {% csrf_token %}
+                                                                                           
+                                    {{user_profile.user}}<input type="text" name = "comment" placeholder="Add a Comment">
+                                            <button type="submit">Post Comment</button>
+                                
+                                </form>
+
+                                <!-- <p>
+                                    <a href="/comments"><strong>View Comments</strong></a>
+                                </p> -->
                                 <!-- <div class="border-t pt-4 space-y-4 ">
                                     <div class="flex">
                                         <div class="w-10 h-10 rounded-full relative flex-shrink-0">

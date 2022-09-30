@@ -35,6 +35,12 @@ class LikePost(models.Model):
     def __str__(self):
         return self.username
 
+# class CommentPost(models.Model):
+#     comment = models.TextField(max_length = 200, blank = True)
+
+
+#     def __str__(self):
+#         return self.username
 
 class FollowersCount(models.Model):
     follower = models.CharField(max_length=100)

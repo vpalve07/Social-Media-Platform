@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.http import HttpResponse
-from .models import Profile, Post, LikePost, FollowersCount
+from .models import Profile, Post, LikePost,  FollowersCount
 from django.contrib.auth.decorators import login_required
 from itertools import chain
 import random
@@ -267,3 +267,15 @@ def search(request):
         username_profile_list = list(chain(*username_profile_list))
 
     return render(request,'search.html',{'user_profile':user_profile,'username_profile_list':username_profile_list})
+
+
+def comments(request):
+    if request.method == 'POST':
+    # user_comment = request.POST.get('comment')
+        comment = request.POST.get('comment')
+        # new_comment = CommentPost.objects.create(comment=comment)
+        # new_comment.save()
+        context={'comment':comment}
+        
+    
+    return render(request,'comments.html',context)
