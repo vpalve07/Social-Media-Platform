@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+from django import django_heroku
 # from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,10 +82,10 @@ WSGI_APPLICATION = 'social_book.wsgi.application'
 DATABASES={
    'default':{
       'ENGINE':'django.db.backends.postgresql_psycopg2',
-      'NAME':'postgres',
-      'USER':'postgres',
-      'PASSWORD':'password',
-      'HOST':'localhost',
+      'NAME':'d9cmis6n5jjpl2',
+      'USER':'vbgistadupilym',
+      'PASSWORD':'dfa47c2cfc0f781da6cbe3bcbc2be45d69219b3ad02e2cc687d6d59d9ef54dd0',
+      'HOST':'ec2-35-170-146-54.compute-1.amazonaws.com',
       'PORT':'5432',
    }
 }
@@ -124,9 +125,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_URL = 'static/'
+django_heroku.settings(locals())
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
