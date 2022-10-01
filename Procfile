@@ -1,0 +1,1 @@
+web: gunicorn smp.wsgi --log-file -
