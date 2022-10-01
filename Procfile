@@ -1,1 +1,1 @@
-web: gunicorn smp.wsgi --log-file -
+web: gunicorn social_book.wsgi --log-file -
