@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-^y*rk4$50qd=xu#v4vl7kdfo++qt$hh3ik7sr0_*buc^oz!dy2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['vinayaksmp.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['vinayak-smp.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'social_book.wsgi.application'
 DATABASES={
    'default':{
       'ENGINE':'django.db.backends.postgresql_psycopg2',
-      'NAME':'',
-      'USER':'',
-      'PASSWORD':'',
-      'HOST':'',
+      'NAME':'deepvhkeua4sf',
+      'USER':'heivuilndmhqen',
+      'PASSWORD':'6d9a1b2869e2892d089dc2034a43b4d8ba4dc99ab3e527ac0abdb6b9a2a4fed8',
+      'HOST':'ec2-18-208-55-135.compute-1.amazonaws.com',
       'PORT':'5432',
    }
 }
