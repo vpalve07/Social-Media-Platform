@@ -304,7 +304,7 @@ div#lottie-beil svg path, div#lottie-mail svg path, div#lottie-fullscreen svg pa
 .iq-search-bar .search-input { color: #000; width: 100%; height: 40px; padding: 5px 40px 5px 15px; border-radius: 10px; border: none; background: #fff; }
 .iq-navbar-logo { padding: 0; width: auto; position: relative; background: var(--iq-white); text-transform: uppercase; font-weight: bold; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; background: transparent; }
 .iq-navbar-logo a { display: flex; align-items: flex-start; }
-.iq-navbar-logo a span { margin-left: 10px; font-size: 28px; font-family: calibri; sans-serif; line-height: 45px; color: var(--iq-dark-title-text); flex: 1; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
+.iq-navbar-logo a span { margin-left: 10px; font-size: 28px; font-family: calibri, Sans-Serif; line-height: 45px; color: var(--iq-dark-title-text); flex: 1; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
 .iq-navbar-logo a:hover, .iq-navbar-logo a:focus { text-decoration: none; }
 .iq-navbar-logo img { height: 45px; }
 
@@ -654,7 +654,7 @@ FAQ
 -----------------------------------------------------------------------*/
 .iq-accordion.career-style.faq-style .iq-accordion-block .accordion-title span { padding-left: 0px; }
 .iq-accordion.career-style .iq-accordion-block { margin-bottom: 30px; }
-.iq-accordion.career-style.faq-style .accordion-title:before { display: inline-block; cursor: pointer; content: "\f218"; font-family: "Ionicons"; position: absolute; top: -8px; right: 15px; color: var(--iq-dark-body-text); font-size: 16px; line-he ight: 16px; font-weight: normal; -webkit-transition: all 0.25s ease-in-out 0s; -moz-transition: all 0.25s ease-in-out 0s; transition: all 0.25s ease-in-out 0s; border-radius: 4px; width: 45px; height: 45px; line-height: 45px; text-align: center; }
+.iq-accordion.career-style.faq-style .accordion-title:before { display: inline-block; cursor: pointer; content: "\f218"; font-family: "Ionicons"; position: absolute; top: -8px; right: 15px; color: var(--iq-dark-body-text); font-size: 16px; line-height: 16px; font-weight: normal; -webkit-transition: all 0.25s ease-in-out 0s; -moz-transition: all 0.25s ease-in-out 0s; transition: all 0.25s ease-in-out 0s; border-radius: 4px; width: 45px; height: 45px; line-height: 45px; text-align: center; }
 .iq-accordion.career-style.faq-style .iq-accordion-block .accordion-details p { padding-left: 15px; padding-top: 15px; padding-bottom: 15px; }
 .iq-accordion.career-style .iq-accordion-block .accordion-title span { font-size: 16px; display: table-cell; color: var(--iq-dark-body-text); }
 .iq-accordion.career-style.faq-style .iq-accordion-block.accordion-active .accordion-title:before { content: "\f209"; display: inline-block; }
