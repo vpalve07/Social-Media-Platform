@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-# import django_heroku
+import django_heroku
 
 import os
 
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django_extensions',
+    'django_extensions',
     'core',
 ]
 
@@ -86,15 +86,15 @@ WSGI_APPLICATION = 'social_book.wsgi.application'
 DATABASES={
    'default':{
       'ENGINE':'django.db.backends.postgresql_psycopg2',
-      'NAME':'deepvhkeua4sf',
-      'USER':'heivuilndmhqen',
-      'PASSWORD':'6d9a1b2869e2892d089dc2034a43b4d8ba4dc99ab3e527ac0abdb6b9a2a4fed8',
-      'HOST':'ec2-18-208-55-135.compute-1.amazonaws.com',
+      'NAME':'d9hk79js9bda5n',
+      'USER':'zptqxzruxuicqw',
+      'PASSWORD':'6f5c8f0cb024951d753d470b949621d15cc945d644a52942db0c2e33d05aa882',
+      'HOST':'ec2-54-157-74-211.compute-1.amazonaws.com',
       'PORT':'5432',
    }
 }
-import dj_database_url
-db_from_env = dj_database_url.config
+# import dj_database_url
+# db_from_env = dj_database_url.config
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -132,7 +132,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = 'static/'
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
 
